@@ -1,56 +1,20 @@
-# 🌱 Plant Disease Detection App
+# Plant Disease Detection App
+This project is a small and easy-to-use web app made with Streamlit.
+You can upload a picture of a plant leaf, and the app will tell you what disease it might have.
+It also highlights the parts of the leaf that look infected.
 
-This project is a simple **Streamlit web app** that detects plant diseases from leaf images.
-It uses a **deep learning model** trained on 38 types of plant diseases.
+# What the App Does
+Lets you upload any leaf image
+Shows the top 5 possible diseases with confidence percentages
+Marks the diseased areas on the leaf
+Has simple pages like Home, About, and Disease Recognition
 
-## 🚀 Features
+# How It Works 
+The app uses a trained deep learning model
+The image is resized and given to the model
+The model predicts the disease
+OpenCV is used to find and show the infected spots on the leaf
 
-* Upload a leaf image and get **top 5 disease predictions**
-* Shows **percentage accuracy** for each prediction
-* Highlights the **diseased areas** using image segmentation
-* Easy-to-use interface with Home, About, and Disease Recognition pages
-
-## 🛠️ Technologies Used
-
-* **Python**
-* **TensorFlow / Keras**
-* **Streamlit**
-* **OpenCV**
-* **NumPy**
-* **Pillow (PIL)**
-
-## ▶️ How to Run
-
-1. Install required libraries:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. Start the app:
-
-   ```bash
-   streamlit run app.py
-   ```
-3. Open the link shown in the terminal (usually `http://localhost:8501`).
-
-## 📸 How It Works
-
-1. You upload a leaf image.
-2. The model predicts the disease.
-3. The app shows:
-
-   * Top 5 disease names
-   * Confidence percentages
-   * Segmented image showing infected areas
-
-## 📁 Files
-
-* `app.py` → Main Streamlit app
-* `plant_disease_model.keras` → Trained model
-* `requirements.txt` → Dependencies
-
-## ✔️ Purpose
-Helps farmers and students quickly identify plant diseases and take action to reduce crop loss.
-
-
-If you want an even **shorter** version, tell me!
+# Why This Project?
+This app helps farmers, students, and researchers quickly check plant health.
+It makes early disease detection easier, which can help reduce crop loss and improve farming results.
